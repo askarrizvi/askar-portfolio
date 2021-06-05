@@ -8,6 +8,7 @@ body{
     background-color: #101820FF;
 }
 
+/*Header*/
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -73,6 +74,7 @@ header nav ul li a {
     margin: 3.5%;
 }
 
+/*About Me*/
 .intro{
     display: flex;
     justify-content: center;
@@ -85,7 +87,7 @@ header nav ul li a {
     font-size: 40px;
     color: #F2AA4CFF;
     border-right: 3px solid;
-    padding-bottom: 30px;
+    padding-bottom: 200px;
     text-align: center;
     margin: 0 90px 35px 30px;
     width:70%;
@@ -100,6 +102,7 @@ header nav ul li a {
     text-align: left;
 }
 
+/*Work*/
 .work{
     display: flex;
     justify-content: center;
@@ -112,7 +115,7 @@ header nav ul li a {
     font-size: 40px;
     color: #F2AA4CFF;
     border-right: 3px solid;
-    padding-bottom: 690px;
+    padding-bottom: 710px;
     text-align: center;
     margin: 0 90px 35px 30px;
     width:73%;
@@ -128,7 +131,7 @@ header nav ul li a {
 }
 
 .workexamples{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -137,10 +140,7 @@ header nav ul li a {
 
 .workexamples img{
     width: 100%;
-    /*filter: blur(4px) brightness(0.5);*/
     opacity: 1;
-    /*padding-bottom: 10px;
-    padding-top: 10px;*/
     margin-bottom: 30px;
     border: 3px solid #F2AA4CFF;
 }
@@ -186,12 +186,6 @@ header nav ul li a {
     color: whitesmoke;
     font-size: 40px;
     font-style: italic;
-    /*position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    text-align: center;*/
 }
 
 .example1:hover .image{
@@ -230,16 +224,11 @@ header nav ul li a {
     opacity: 1;
 }
 
-/*@media (hover:hover){
-    .workexamples img:hover{
-        filter: blur(0px);
-        opacity: 0;
-    }
-}*/
-
+/*Contact Me*/
 .contact{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap:nowrap;
     padding-top: 2%;
     background: #101820FF
@@ -254,3 +243,58 @@ header nav ul li a {
     margin: 0 90px 35px 30px;
     width:62%;
 }
+
+.contact nav {
+    margin: 7px 0;
+}
+
+.contact nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contact nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #F2AA4CFF;
+}
+
+.contact img{
+    max-width: 10%;
+}
+
+/*Adjust for different screen/window sizes*/
+@media screen and (max-width: 980px) {
+    .contact img{
+        max-width: 15%;
+    }
+    header nav ul li a {
+        font-size: 2vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact img{
+        max-width: 20%;
+    }
+    header nav ul li a {
+        font-size: 3vw;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .contact img{
+        max-width: 30%;
+    }
+    header nav ul li a {
+        font-size: 4vw;
+    }
+  }
