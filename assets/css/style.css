@@ -169,6 +169,12 @@ header nav ul li a {
     position: relative;
 }
 
+.example5{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 
 .overlay{
     transition: .5s ease;
@@ -221,6 +227,15 @@ header nav ul li a {
 }
 
 .example4:hover .overlay{
+    opacity: 1;
+}
+
+.example5:hover .image{
+    filter: blur(4px);
+    opacity: 0.5;
+}
+
+.example5:hover .overlay{
     opacity: 1;
 }
 
